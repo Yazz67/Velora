@@ -513,8 +513,13 @@ p, li, a, span {
 @media (max-width: 900px) {
 
     .navbar {
+        display: none;
+    }
+
+    .navbar.active {
+        bottom: 0; /* <-- SLIDE DU BAS */
         position: fixed;
-        bottom: -100%; /* <-- CACHÉ PAR DÉFAUT */
+        bottom: -320%; /* <-- CACHÉ PAR DÉFAUT */
         left: 50%;
         transform: translateX(-50%);
         width: 100%;
@@ -522,7 +527,8 @@ p, li, a, span {
 
         background: rgba(255,255,255,0.15);
         backdrop-filter: blur(18px) saturate(180%);
-        border-radius: 25px 25px 0 0;
+        
+        border-radius: 25px 25px 25px 25px;
         border-top: 1px solid rgba(255,255,255,0.25);
 
         display: flex;
@@ -534,9 +540,7 @@ p, li, a, span {
         z-index: 9998;
     }
 
-    .navbar.active {
-        bottom: 0; /* <-- SLIDE DU BAS */
-    }
+
 
     .hamburger {
         display: flex;
@@ -553,8 +557,21 @@ p, li, a, span {
         border-radius: 5px;
         transition: 0.3s;
     }
+
+.navbar a {
+    color: linear-gradient(135deg, #000000, #4c4c58);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow: 0 4px 25px rgba(255,255,255,0.4);
+
+    transition: 0.3s;
 }
 
+
+
+
+}
 
 
 
@@ -758,6 +775,10 @@ p, li, a, span {
 }
 
 
+/* ===========================
+   FOOTER
+=========================== */
+
 .footer {
     background: #30305f;
     padding: 60px 10%;
@@ -800,6 +821,32 @@ p, li, a, span {
     border-top: 1px solid rgba(255,255,255,0.1);
     font-size: 14px;
     opacity: 0.7;
+}
+
+/* ===========================
+   RESPONSIVE FOOTER
+=========================== */
+
+@media (max-width: 1200px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media (max-width: 700px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .footer {
+        padding: 50px 8%;
+    }
+
+    .footer-col h4 {
+        font-size: 17px;
+    }
 }
 
 
@@ -859,8 +906,7 @@ p, li, a, span {
 .why-box:hover {
     transform: translateY(-8px);
     box-shadow: 0 0 20px rgba(180,123,255,0.3);
-        cursor: pointer;
-
+    cursor: pointer;
 }
 
 .why-box i {
@@ -873,6 +919,33 @@ p, li, a, span {
     font-size: 20px;
     margin-bottom: 10px;
 }
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 1200px) {
+    .why-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media (max-width: 700px) {
+    .why-container {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .why-us {
+        padding: 60px 6%;
+    }
+
+    .why-us h1 {
+        font-size: 26px;
+    }
+}
+
 
 /* ===========================
    SECTION PROCESS PRO
