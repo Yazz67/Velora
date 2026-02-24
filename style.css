@@ -464,14 +464,34 @@ p, li, a, span {
 }
 
 
-.navbar a{
-    color: #0d0d0f;
-    font-size: 18px;
+.navbar a {
+    padding: 12px 20px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 14px;
+    text-align: center;
+    color: #fff;
     text-decoration: none;
-    margin-left: 35px;
-    border-bottom: 2px solid transparent;
     transition: 0.3s;
+    border: 1px solid rgba(255,255,255,0.15);
+    display: inline-flex;       /* ✔ permet l’alignement en ligne */
+    justify-content: center;
+    align-items: center;
+    gap: 220px; /* 🔥 espace entre les boutons */
 }
+
+
+.navbar a:hover {
+    background: rgba(255,255,255,0.15);
+    transform: scale(1.08); /* 🔥 grandit légèrement */
+        box-shadow:
+            inset 0 0 25px rgba(255, 255, 255, 0.3),
+            0 8px 25px rgba(0, 0, 0, 0.45);
+
+
+            
+}
+
+
 
 /* ===========================
    HAMBURGER
@@ -865,20 +885,7 @@ opacity: 0.95;
 
 
 
-/* ===========================
-   SCROLL PROGRESS BAR PRO
-=========================== */
 
-#scroll-progress {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 4px;
-    width: 0;
-    background: linear-gradient(90deg, #ffffff, #b47bff);
-    box-shadow: 0 0 10px #fff, 0 0 20px #b47bff;
-    z-index: 999999; /* plus haut que ton header */
-}
 
 
 /* ===========================
