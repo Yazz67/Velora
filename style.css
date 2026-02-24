@@ -1305,6 +1305,7 @@ opacity: 0.95;
 .impact-card p {
     opacity: 0.8;
     font-size: 15px;
+    color: #ffffff;
 }
 
 /* Responsive */
@@ -1391,3 +1392,4 @@ opacity: 0.95;
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(180,123,255,0.4);
 }
+
