@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mentions légales — Velora Web Agency</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            padding: 60px 20px;
+            background: radial-gradient(circle at 20% 20%, #1a1a22, #0d0d11 70%);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Liquid Glass Container */
+        .glass-wrapper {
+            position: relative;
+            max-width: 900px;
+            padding: 50px;
+            border-radius: 24px;
+            backdrop-filter: blur(18px) saturate(180%);
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        /* Liquid effect */
+        .glass-wrapper::before,
+        .glass-wrapper::after {
+            content: "";
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(180, 123, 255, 0.25), transparent 70%);
+            filter: blur(80px);
+            animation: float 12s infinite ease-in-out;
+            z-index: 0;
+        }
+
+        .glass-wrapper::before {
+            top: -200px;
+            left: -150px;
+        }
+
+        .glass-wrapper::after {
+            bottom: -200px;
+            right: -150px;
+            animation-delay: -6s;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0) translateX(0); }
+            50% { transform: translateY(40px) translateX(30px); }
+            100% { transform: translateY(0) translateX(0); }
+        }
+
+        h1, h2 {
+            color: #c89bff;
+            margin-top: 40px;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.8;
+            margin-bottom: 18px;
+            color: #e8e8e8;
+        }
+
+        a {
+            color: #d3a6ff;
+            text-decoration: none;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 25px;
+            padding: 10px 18px;
+            background: linear-gradient(135deg, #b47bff, #8f5aff);
+            color: #fff;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: 0.3s;
+            position: relative;
+            z-index: 5; /* Important pour rester cliquable */
+        }
+
+        .back-btn:hover {
+            transform: translateY(-2px);
+            background: linear-gradient(135deg, #d3a6ff, #b47bff);
+        }
+
+        /* Scrollbar */
+        html {
+            scroll-behavior: smooth;
+        }
+        html::-webkit-scrollbar {
+            width: 0.5rem;
+        }
+        html::-webkit-scrollbar-thumb {
+            background: #b47bff;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="glass-wrapper">
+    <a class="back-btn" href="index.html">← Retour au site</a>
+
+    <h1>Mentions légales</h1>
+
+    <h2>1. Éditeur du site</h2>
+    <p>
+        Le présent site est édité par :<br>
+        <strong>Velora Web Agency</strong><br>
+        Statut : Auto-entreprise / Micro-entreprise<br>
+        SIRET : 000 000 000 00000<br>
+        Adresse : Paris, France<br>
+        Email : contact@ddagency.com<br>
+        Directeur de la publication : Dalil (Fondateur)
+    </p>
+
+    <h2>2. Hébergement</h2>
+    <p>
+        Le site est hébergé par :<br>
+        <strong>OVH SAS</strong><br>
+        2 rue Kellermann – 59100 Roubaix – France<br>
+        Téléphone : 09 72 10 10 07<br>
+        Site : <a href="https://www.ovh.com" target="_blank">www.ovh.com</a>
+    </p>
+
+    <h2>3. Propriété intellectuelle</h2>
+    <p>
+        L’ensemble du contenu du site (textes, images, vidéos, graphismes, logo, code, structure) est protégé par le Code de la propriété intellectuelle.<br>
+        Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable de Velora Web Agency.
+    </p>
+
+    <h2>4. Responsabilité</h2>
+    <p>
+        Velora Web Agency ne saurait être tenue responsable des dommages directs ou indirects causés au matériel de l’utilisateur lors de l’accès au site, ni des éventuelles erreurs ou indisponibilités.
+    </p>
+
+    <h2>5. Liens hypertextes</h2>
+    <p>
+        Le site peut contenir des liens vers d’autres sites. Velora Web Agency n’exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu.
+    </p>
+
+    <h2>6. Droit applicable</h2>
+    <p>
+        Les présentes mentions légales sont régies par le droit français. En cas de litige, et à défaut de résolution amiable, les tribunaux français seront seuls compétents.
+    </p>
+</div>
+
+</body>
+</html>

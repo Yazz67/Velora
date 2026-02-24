@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velora Web Agency — Création de Sites Web</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/icon/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+    emailjs.init("lXrvI0MaAdHPNPiB0");
+</script>
+
+    </head>
+
+    <body>
+<div id="scroll-progress"></div>
+
+
+<header class="header">
+    <a href="login.php" class="logo">
+        <img src="img/logo1.png" alt="Logo de D.D Agency" />
+    </a>
+
+    <nav class="navbar" id="navbar">
+        <a href="#process">Méthode</a>
+        <a href="#cards">Abonnements</a>
+        <a href="#why-us">À propos</a>
+        <a href="#ctaCard">Contact</a>
+        <a href="#faq">FAQ</a>
+    </nav>
+
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
+
+
+        
+<section class="home" onmouseenter="trackSection('home')">
+    <div class="home-image">
+        <img src="img/home.png" alt="Hero Image">
+    </div>
+
+    <div class="home-card">
+        <div class="home-logo">
+            <img src="img/logo2.png" alt="Logo">
+        </div>
+
+        <h1>Votre présence digitale commence dès maintenant.</h1>
+        <p>Un univers moderne et stratégique conçu pour attirer, engager et convertir.</p>
+
+        <button class="home-btn" onclick="window.location.href='#why-us'">Commencer</button>
+    </div>
+</section>
+
+
+
+<section class="why-us" id="why-us" onmouseenter="trackSection('why-us')">
+    <h3>POURQUOI NOUS CHOISIR ?</h3>
+    <h1>Une agence pensée pour votre réussite</h1>
+
+    <div class="why-container">
+
+        <div class="why-box">
+            <i class="fa-solid fa-bolt"></i>
+            <h2>Rapidité & efficacité</h2>
+            <p>Nous livrons des sites modernes en un temps record, sans compromis sur la qualité.</p>
+        </div>
+
+        <div class="why-box">
+            <i class="fa-solid fa-palette"></i>
+            <h2>Design premium</h2>
+            <p>Des interfaces élégantes, inspirées des standards Apple & Vision Pro.</p>
+        </div>
+
+        <div class="why-box">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h2>Maintenance incluse</h2>
+            <p>Votre site reste sécurisé, rapide et mis à jour en permanence.</p>
+        </div>
+
+        <div class="why-box">
+            <i class="fa-solid fa-handshake"></i>
+            <h2>Accompagnement humain</h2>
+            <p>Nous vous guidons à chaque étape, avec un support réactif et personnalisé.</p>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+<section class="cards" id="cards" onmouseenter="trackSection('cards')">
+            <h3>NOS ABONNEMENTS</h3>
+            <h1>Choisissez votre formule</h1>
+    <div class="card-container">
+
+        <!-- BASIQUE -->
+        <div class="card">
+            <div class="card-icon">
+                <i class="fa-solid fa-leaf"></i>
+                
+            </div>
+            <h3>BASIQUE</h3>
+
+            <ul class="card-list">
+                <li>Hébergement</li>
+                <li>Maintenance</li>
+                <li>1 modification par mois</li>
+                <li>Support</li>
+            </ul>
+
+            <div class="price-box">
+                <span class="old-price">70€/mois</span>
+                <span class="new-price">40€/mois</span>
+            </div>
+        </div>
+
+        <!-- PREMIUM -->
+        <div class="card">
+            <div class="card-icon">
+                <i class="fa-solid fa-gem"></i>
+            </div>
+            <h3>PREMIUM</h3>
+
+            <ul class="card-list">
+                <li>Tout de la formule Basique</li>
+                <li>2 modifications par mois</li>
+                <li>Mise à jour de contenu (menu, photos, produits…)</li>
+                <li>Support prioritaire par email</li>
+          
+
+            </ul>
+
+            <div class="price-box">
+    <span class="old-price">100€/mois</span>
+    <span class="new-price">50€/mois</span>
+</div>
+
+        </div>
+
+        <!-- PRESTIGE -->
+        <div class="card">
+            <div class="card-icon">
+                <i class="fa-solid fa-crown"></i>
+            </div>
+            <h3>PRESTIGE</h3>
+
+            <ul class="card-list">
+                <li>Tout de la formule Premium</li>
+                <li>4 modifications par mois</li>
+                <li>Ajout de promotions ou événements</li>
+                <li>Assistance prioritaire express</li>
+            </ul>
+
+<div class="price-box">
+    <span class="old-price">150€/mois</span>
+    <span class="new-price">99€/mois</span>
+</div>
+        </div>
+
+    </div>
+</section>
+<section class="process" id="process" onmouseenter="trackSection('process')">
+    <h3>NOTRE MÉTHODE</h3>
+    <h1>Un processus clair et efficace</h1>
+
+    <div class="process-wrapper">
+
+        <div class="process-step">
+            <div class="process-icon">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+            <h2>Appel découverte</h2>
+            <p>Nous analysons vos besoins, votre marché et vos objectifs.</p>
+        </div>
+
+        <div class="process-arrow">
+            <i class="fa-solid fa-arrow-right-long"></i>
+        </div>
+
+        <div class="process-step">
+            <div class="process-icon">
+                <i class="fa-solid fa-pen-ruler"></i>
+            </div>
+            <h2>Maquette personnalisée</h2>
+            <p>Nous créons un design moderne et adapté à votre identité.</p>
+        </div>
+
+        <div class="process-arrow">
+            <i class="fa-solid fa-arrow-right-long"></i>
+        </div>
+
+        <div class="process-step">
+            <div class="process-icon">
+                <i class="fa-solid fa-code"></i>
+            </div>
+            <h2>Création</h2>
+            <p>Nous transformons la maquette en un site rapide et performant.</p>
+        </div>
+
+        <div class="process-arrow">
+            <i class="fa-solid fa-arrow-right-long"></i>
+        </div>
+
+        <div class="process-step">
+            <div class="process-icon">
+                <i class="fa-solid fa-rocket"></i>
+            </div>
+            <h2>Mise en ligne</h2>
+            <p>Votre site est publié, optimisé et prêt à convertir.</p>
+        </div>
+
+        <div class="process-arrow">
+            <i class="fa-solid fa-arrow-right-long"></i>
+        </div>
+
+        <div class="process-step">
+            <div class="process-icon">
+                <i class="fa-solid fa-shield-heart"></i>
+            </div>
+            <h2>Maintenance</h2>
+            <p>Nous assurons mises à jour, sécurité et support continu.</p>
+        </div>
+
+    </div>
+</section>
+<section class="impact" id="impact" onmouseenter="trackSection('impact')">
+    <h3>Résultats concrets</h3>
+    <h1>L’impact de Velora sur votre trafic</h1>
+
+    <div class="impact-grid">
+
+        <div class="impact-card">
+            <i class="fa-solid fa-chart-line"></i>
+            <h2><span class="counter" data-target="320">0</span>%</h2>
+            <p>Augmentation moyenne du trafic après refonte</p>
+        </div>
+
+        <div class="impact-card">
+            <i class="fa-solid fa-user-plus"></i>
+            <h2><span class="counter" data-target="180">0</span>%</h2>
+            <p>Clients supplémentaires générés en 3 mois</p>
+        </div>
+
+        <div class="impact-card">
+            <i class="fa-solid fa-rocket"></i>
+            <h2><span class="counter" data-target="95">0</span>%</h2>
+            <p>Sites plus rapides que la concurrence</p>
+        </div>
+
+        <div class="impact-card">
+            <i class="fa-solid fa-bullseye"></i>
+            <h2><span class="counter" data-target="70">0</span>%</h2>
+            <p>Conversions en plus grâce à l’optimisation UX</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="faq" id="faq" onmouseenter="trackSection('faq')">
+    <h3>FAQ</h3>
+    <h1>Questions fréquentes</h1>
+
+    <div class="faq-container">
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Combien de temps faut-il pour créer un site ?</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                En moyenne entre 5 et 10 jours selon la complexité du projet.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Proposez-vous la maintenance ?</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                Oui, nous assurons mises à jour, sécurité, optimisation et support continu.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Est-ce que le site est responsive ?</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                Tous nos sites sont 100% adaptés mobile, tablette et ordinateur.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Puis-je modifier mon site moi-même ?</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                Oui, nous vous donnons accès à un espace simple pour modifier textes et images.
+            </div>
+        </div>
+<p class="faq-contact">
+    Pour toute autre question, n’hésitez pas à nous contacter par email ou WhatsApp. Nous sommes là pour vous accompagner.
+</p>
+
+    </div>
+    
+</section>
+
+<footer class="footer">
+
+    <div class="footer-grid">
+
+        <!-- COL 1 : Branding -->
+        <div class="footer-col">
+            <img src="img/logo2.png" alt="Logo" class="footer-logo">
+            <p>Nous créons des sites web modernes, performants et pensés pour convertir.</p>
+        </div>
+
+        <!-- COL 2 : Navigation -->
+        <div class="footer-col">
+            <h4>Navigation</h4>
+            <a href="#process">Méthode</a>
+                <a href="#cards">Abonnements</a>
+
+                <a href="#why-us">À propos</a>
+                <a href="#ctaCard">Contact</a>
+                <a href="#faq">FAQ</a>
+        </div>
+
+        <!-- COL 3 : Informations légales -->
+        <div class="footer-col">
+            <h4>Informations légales</h4>
+            <a href="mentions-legales.html">Mentions légales</a>
+            <a href="politique-confidentialite.html">Politique de confidentialité</a>
+            <a href="cgu.html">Conditions générales d'utilisation</a>
+            <a href="cgv.html">Conditions générales de vente</a>
+            <a href="politique-cookies.html">Politique de cookies</a>
+        </div>
+
+        <!-- COL 4 : Contact -->
+        <div class="footer-col">
+            <h4>Contact</h4>
+            <p>Email : contact@ddagency.com</p>
+            <p>Tel : +33 6 00 00 00 00</p>
+            <p>Adresse : Paris, France</p>
+            <p>SIRET : 000 000 000 00000</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 — Velora Web Agency. Tous droits réservés.
+    </div>
+
+</footer>
+
+<!-- CTA flottant -->
+<div class="cta-floating" id="ctaBtn">
+    <i class="fa-solid fa-message"></i>
+</div>
+
+<!-- Card popup -->
+<div class="cta-card" id="ctaCard">
+    <h3>Demande de devis</h3>
+    <p>Pour toute demande de devis, veuillez nous contacter :</p>
+
+    <div class="cta-links">
+        <a href="mailto:contact@ddagency.com">
+            <i class="fa-solid fa-envelope"></i> Email
+        </a>
+        <a href="https://wa.me/33769810063" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </a>
+<p>Ou remplisser se formulaire :</p>
+        <form id="contact-form">
+    <input type="text" name="name" placeholder="Votre nom" required>
+    <input type="email" name="email" placeholder="Votre email" required>
+    <textarea name="message" placeholder="Votre message" required></textarea>
+    <button type="submit">Envoyer</button>
+</form>
+
+<p id="form-status"></p>
+
+    </div>
+</div>
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+<script src="script.js"></script>
+<script>
+let timeSpent = 0;
+setInterval(() => timeSpent++, 1000);
+
+// Quand l’utilisateur change de section
+function trackSection(sectionName) {
+    fetch("track.php", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: "section=" + sectionName + "&time=" + timeSpent
+    });
+
+    timeSpent = 0;
+}
+</script>
+
+    </body>
+    
+</html>

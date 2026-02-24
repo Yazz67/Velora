@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Politique de cookies — Velora Web Agency</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            padding: 60px 20px;
+            background: radial-gradient(circle at 20% 20%, #1a1a22, #0d0d11 70%);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Liquid Glass Container */
+        .glass-wrapper {
+            position: relative;
+            max-width: 900px;
+            padding: 50px;
+            border-radius: 24px;
+            backdrop-filter: blur(18px) saturate(180%);
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        /* Liquid effect */
+        .glass-wrapper::before,
+        .glass-wrapper::after {
+            content: "";
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(180, 123, 255, 0.25), transparent 70%);
+            filter: blur(80px);
+            animation: float 12s infinite ease-in-out;
+            z-index: 0;
+        }
+
+        .glass-wrapper::before {
+            top: -200px;
+            left: -150px;
+        }
+
+        .glass-wrapper::after {
+            bottom: -200px;
+            right: -150px;
+            animation-delay: -6s;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0) translateX(0); }
+            50% { transform: translateY(40px) translateX(30px); }
+            100% { transform: translateY(0) translateX(0); }
+        }
+
+        h1, h2 {
+            color: #c89bff;
+            margin-top: 40px;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.8;
+            margin-bottom: 18px;
+            color: #e8e8e8;
+        }
+
+        a {
+            color: #d3a6ff;
+            text-decoration: none;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 25px;
+            padding: 10px 18px;
+            background: linear-gradient(135deg, #b47bff, #8f5aff);
+            color: #fff;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: 0.3s;
+            position: relative;
+            z-index: 5; /* Important pour rester cliquable */
+        }
+
+        .back-btn:hover {
+            transform: translateY(-2px);
+            background: linear-gradient(135deg, #d3a6ff, #b47bff);
+        }
+
+        /* Scrollbar */
+        html {
+            scroll-behavior: smooth;
+        }
+        html::-webkit-scrollbar {
+            width: 0.5rem;
+        }
+        html::-webkit-scrollbar-thumb {
+            background: #b47bff;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="glass-wrapper">
+    <a class="back-btn" href="index.html">← Retour au site</a>
+
+    <h1>Politique de cookies</h1>
+
+    <h2>1. Qu’est-ce qu’un cookie ?</h2>
+    <p>
+        Un cookie est un petit fichier texte déposé sur votre terminal (ordinateur, mobile, tablette) lors de la consultation d’un site internet.  
+        Il permet notamment de mémoriser certaines informations pour améliorer votre expérience.
+    </p>
+
+    <h2>2. Cookies utilisés par Velora Web Agency</h2>
+    <p>
+        Velora Web Agency utilise principalement :<br>
+        – Des cookies techniques nécessaires au bon fonctionnement du site (navigation, sécurité)<br>
+        – Aucun cookie publicitaire<br>
+        – Aucun cookie de tracking tiers<br>
+        – Des outils d’analytics sans cookies (basés sur des données anonymisées ou localStorage)
+    </p>
+
+    <h2>3. Consentement</h2>
+    <p>
+        Conformément aux recommandations de la CNIL, les cookies strictement nécessaires au fonctionnement du site ne nécessitent pas de consentement préalable.  
+        Si des cookies non essentiels étaient ajoutés (publicité, tracking), une bannière de consentement serait mise en place.
+    </p>
+
+    <h2>4. Gestion des cookies</h2>
+    <p>
+        Vous pouvez configurer votre navigateur pour accepter ou refuser les cookies, ou pour être informé lorsqu’un cookie est déposé.  
+        Le refus des cookies techniques peut toutefois dégrader certaines fonctionnalités du site.
+    </p>
+
+    <h2>5. Mise à jour de la politique</h2>
+    <p>
+        La présente politique de cookies peut être mise à jour en fonction de l’évolution du site ou de la réglementation.  
+        Nous vous invitons à la consulter régulièrement.
+    </p>
+</div>
+
+</body>
+</html>
