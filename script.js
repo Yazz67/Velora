@@ -108,12 +108,32 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // CTA popup
-const ctaBtn = document.getElementById("ctaBtn");
-const ctaCard = document.getElementById("ctaCard");
+    const ctaBtn = document.querySelector('.cta-floating');
+    const ctaCard = document.querySelector('.cta-card');
 
-ctaBtn.addEventListener("click", () => {
-    ctaCard.classList.toggle("active");
-});
+    // Ouvrir / fermer en cliquant sur le bouton
+    ctaBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        ctaCard.classList.toggle('active');
+    });
+
+    // Empêche la fermeture quand on clique dans la carte
+    ctaCard.addEventListener('click', (e) => {
+        e.stopPropagation();
+    });
+
+    // Fermer quand on clique ailleurs
+    document.addEventListener('click', () => {
+        ctaCard.classList.remove('active');
+    });
+
+    // Fermer quand on scroll
+    window.addEventListener('scroll', () => {
+        ctaCard.classList.remove('active');
+    });
+
+
+
 
 
 // FAQ accordéon
