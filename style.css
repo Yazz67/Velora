@@ -463,6 +463,10 @@ p, li, a, span {
     transform: scale(1.05);
 }
 
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
 
 .navbar a {
     padding: 12px 20px;
@@ -488,7 +492,7 @@ p, li, a, span {
             0 8px 25px rgba(0, 0, 0, 0.45);
 
 
-            
+
 }
 
 
@@ -939,6 +943,14 @@ opacity: 0.95;
 .why-box h2 {
     font-size: 20px;
     margin-bottom: 10px;
+        color: #fff;
+
+}
+
+.why-box p {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.6;
 }
 
 /* ===========================
@@ -1037,6 +1049,17 @@ opacity: 0.95;
     font-size: 32px;
     color: #b47bff;
     opacity: 0.7;
+}
+
+.process-step h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.process-step p {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.6;
 }
 
 /* Responsive */
@@ -1151,6 +1174,8 @@ opacity: 0.95;
 .faq h1 {
     font-size: 32px;
     margin-bottom: 40px;
+        color: #ffffff;
+
 }
 
 .faq-container {
@@ -1178,14 +1203,17 @@ opacity: 0.95;
     justify-content: space-between;
     align-items: center;
     font-size: 18px;
+    color: #fff;
 }
 
 .faq-question i {
     transition: 0.3s;
+    color: #fff;
 }
 
 .faq-item.active .faq-question i {
     transform: rotate(180deg);
+
 }
 
 .faq-answer {
@@ -1196,6 +1224,7 @@ opacity: 0.95;
     transition: 0.35s ease;
     text-align: left;
     line-height: 1.6;
+    color: #ffffff;
 }
 
 .faq-item.active .faq-answer {
@@ -1204,10 +1233,14 @@ opacity: 0.95;
     margin-top: 15px;
 }
 
+
+
 .faq-contact {
     margin-top: 25px;
     font-size: 16px;
     opacity: 0.8;
+        color: #ffffff;
+
 }
 
 
@@ -1265,6 +1298,7 @@ opacity: 0.95;
     font-weight: 700;
     margin: 10px 0;
     letter-spacing: -1px;
+        color: #ffffff;
 }
 
 
@@ -1289,7 +1323,10 @@ opacity: 0.95;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-variant-numeric: tabular-nums;
+        color: #ffffff;
+
 }
+
 /* ===========================
    FORMULAIRE CTA
 =========================== */
