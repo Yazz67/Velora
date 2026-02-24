@@ -516,29 +516,51 @@ p, li, a, span {
         display: none;
     }
 
-    .navbar.active {
-        bottom: 0; /* <-- SLIDE DU BAS */
-        position: fixed;
-        bottom: -320%; /* <-- CACHÉ PAR DÉFAUT */
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-        padding: 45px 30px;
+.navbar.active {
+    bottom: 0;
+    position: fixed;
+    bottom: -320%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 45px 30px;
 
-        background: rgba(255,255,255,0.15);
-        backdrop-filter: blur(18px) saturate(180%);
-        
-        border-radius: 25px 25px 25px 25px;
-        border-top: 1px solid rgba(255,255,255,0.25);
+    /* 🎨 Même background que le bouton flottant */
+ background:
+        radial-gradient(circle at top left, rgba(180, 90, 255, 0.25), transparent 60%),
+        linear-gradient(135deg, #6a4bff, #2d1f4d);
+opacity: 0.95;
+    backdrop-filter: blur(18px) saturate(180%);
+    border-radius: 22px;
+    backdrop-filter: blur(18px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.25);
 
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-        text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 
-        transition: bottom 0.45s ease;
-        z-index: 9998;
-    }
+    transition: bottom 0.45s ease;
+    z-index: 9998;
+}
+
+
+
+.navbar a {
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;        /* permet le centrage */
+    text-align: left;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s ease;
+}
+.navbar a:hover {
+    color: #b47bff;
+    border-bottom: 1px solid #b47bff;
+
+}
+
 
 
 
