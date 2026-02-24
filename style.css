@@ -543,7 +543,7 @@ p, li, a, span {
 .navbar.active {
     bottom: 0;
     position: fixed;
-    bottom: -320%;
+    bottom: -450%;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
